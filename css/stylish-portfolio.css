@@ -11,7 +11,13 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro';
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  xoverflow: hidden;
+  color: #fff;
+  background: black!important;
+  -webkit-font-smoothing: antialiased;
 }
 
 .btn-xl {
@@ -93,11 +99,7 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-color: #ecb807!important;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #000!important;
 }
 
 .masthead h1 {
@@ -326,15 +328,15 @@ a:hover, a:focus, a:active {
 
 .btn-primary {
   background-color: transparent !important;
-  border: 3px solid black !important;
-  xborder-color: #1D809F !important;
-  color: #1D809F  !important;
+  border: 3px solid white !important;
+  color: #fff  !important;
+  border-radius: 0rem;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #155d74 !important;
-  border-color: #155d74 !important;
-  color: #fff !important;
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #000 !important;
 }
 
 .btn-secondary {
