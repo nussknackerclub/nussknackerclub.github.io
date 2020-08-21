@@ -1,0 +1,14 @@
+<script src="{{"/assets/vendor/jquery/jquery.min.js" | relative_url }}"></script>
+<script src="{{"/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" | relative_url }}"></script>
+<script src="{{"/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js" | relative_url }}"></script>
+
+<script src="{{"/assets/scripts.js" | relative_url }}"></script>
+
+
+
+
+{% if page.url contains 'contact' %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>window.addEventListener("load",function(){window.cookieconsent.initialise({palette:{popup:{background:"#237afc"},button:{background:"transparent",text:"#fff",border:"#fff"}},content:{message:"Diese Internetseite verwendet Cookies, um den Benutzern bestimmte Dienste und Funktionen bereitzustellen.",dismiss:"Cookies erlauben",link:"Details"}})});</script>
+
+{% endif %}

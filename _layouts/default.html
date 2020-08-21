@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="icon" href="https://innovative-hackers-blog.github.io/favicon.ico" type="image/x-icon">
+{% include head.html %}
+<style>
+.navbar-brand {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+#mainNav .navbar-brand {
+    font-weight: 400;
+}
+body {
+    font-family: monospace, Helvetica, Arial ;
+}
+header.masthead {
+  background-color: black !important;
+  background-image: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: monospace, Helvetica, Arial ;
+}
+.post-preview>.post-meta , .caption{
+    font-style: normal;
+}
+header.masthead .page-heading .subheading, header.masthead .site-heading .subheading {
+    font-family: monospace, Helvetica, Arial ;
+}
+.btn-primary {
+    background-color: black;
+    border-color: black;
+}
+
+.post-preview>a:focus, .post-preview>a:hover {
+    color: #49fb35;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: black;
+    background-color: #49fb35 !important;
+    border-color: #49fb35!important;
+}
+a:focus, a:hover {
+    color: #49fb35;
+}
+.post-preview>a{
+    color: white;
+}
+
+.post-title,.post-subtitle,.post-meta{
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    background-color: black;
+}
+.post-meta{
+    margin-top: 0px;
+}
+a:focus>.post-title,a:hover>.post-title{
+    background-color: black;
+}
+a:focus>.post-subtitle,a:hover>.post-subtitle{
+    background-color: black;
+}
+a:focus>.post-meta,a:hover>.post-meta{
+    background-color: black;
+}
+p>a, p>a {
+    display: inline-block;
+}
+p>a:focus, p>a:hover {
+    color: #49fb35;
+    background-color: black;
+}
+hr {
+    border-top: 3px solid black;
+}
+</style>
+<body>
+
+  {% include navbar.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+
+  {% include scripts.html %}
+
+  {% include google-analytics.html %}
+
+</body>
+
+</html>
