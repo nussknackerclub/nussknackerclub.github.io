@@ -1,0 +1,28 @@
+---
+layout: default
+title: Crazy Stuff
+background: '/skills.jpg'
+---
+{% include headercontainer.html %}
+
+<section id="content" class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2" ></div>
+            <div class="col-md-8 text-center"><h2>crazy</h2><br><br>
+
+                {% for post in site.posts limit : 500 %}
+
+                [<a  href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>]
+
+                {% endfor %}
+
+            </div>
+            <div class="col-md-2" ></div>
+
+        </div>
+    </div>
+
+</section>
+
+

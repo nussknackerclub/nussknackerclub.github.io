@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<header class="masthead d-flex " >
+    <div class="container text-center my-auto"><br>
+        <h1 class="mb-1">{{page.title}}</h1>
+        <br> <br><br><br><a class="btn btn-primary btn-xl js-scroll-trigger" href="#post">crazy {{page.categorie}}</a></div>
+    <div class="overlay"></div>
+</header>
+<section id="post" class="content-section ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2" ></div>
+            <div class="col-md-8 xtext-center">
+                <h2>{{page.title}} </h2>
+                <br>
+                <small>von crazy.nussknacker.club#{{page.author}}</small>
+                <br><br>
+                <p>
+                    {{ content }}
+                    <br><br>[<a href="{{ site.url }}/kontakt.html#{{page.author}}">Anfrage</a>]
+                </p>
+                <br>
+                <p>
+                    <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Dieses Werk ist lizenziert unter einer <a target="_blank"  rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>
+                </p>
+                <hr>
+
+
+            </div>
+            <div class="col-md-2" ></div>
+
+        </div>
+    </div>
+</section>
