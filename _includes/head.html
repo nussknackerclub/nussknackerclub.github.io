@@ -5,8 +5,13 @@
 <meta name="robots" content="noindex,nofollow" />
 {% endif %}
 
+{% if page.shareimg %}
+<meta property="og:image" content="https://nussknackerclub.github.io{{ page.shareimg | prepend: site.baseurl | replace: '//', '/' }}" />
+<meta name="image" content="https://nussknackerclub.github.io{{ page.shareimg | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title | escape }}">
+{% else %}
 <meta property="og:image" content="https://nussknackerclub.github.io/sharex.jpg" />
 <meta name="image" content="https://nussknackerclub.github.io/sharex.jpg" alt="{{ page.title | escape }}">
+{% endif %}
 
 <meta property="og:title" content="{{ page.title | escape }}" />
 <meta property="og:type" content="website" />
